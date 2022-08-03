@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package dummy;
+
+option java_package = "com.dummy.services";
+option java_multiple_files = true;
+
+service DummyService{
+  rpc getDummy(DummyRequest) returns (DummyResponse);
+}
+
+message DummyRequest{
+  int32 id = 1;
+}
+
+message DummyResponse{
+  int32 id = 1;
+  string name = 2;
+  string location = 3;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
